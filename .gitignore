@@ -14,7 +14,9 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-
+file.txt
+file2.txt
+file3.txt
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
