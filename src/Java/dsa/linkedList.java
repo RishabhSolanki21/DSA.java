@@ -81,21 +81,19 @@ public class linkedList {
         System.out.println("END");
         return 0;
     }
-}
-      class d{
     public static void main(String[] args) {
-        linkedList l=new linkedList();
+        linkedList l = new linkedList();
         l.insertF(9);
         l.insertF(7);
         l.insertF(4);
         l.insertF(1);
         l.insertF(11);
         l.iLast(99);
-        l.iAt(0,110);
-       // l.dFirst();
+        l.iAt(0, 110);
+        // l.dFirst();
         l.dLast();
         l.dAt(5);
-       l.display();
-
+        l.display();
     }
+
 }

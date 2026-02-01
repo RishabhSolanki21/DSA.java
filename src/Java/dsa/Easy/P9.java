@@ -1,5 +1,6 @@
 package Java.dsa.Easy;
 
+import java.math.MathContext;
 import java.util.*;
 
 public class P9 {
@@ -139,9 +140,23 @@ public class P9 {
         List<List<Integer>>list1=generate(rowIndex+1);
         return list1.get(rowIndex);
     }
+
+    public static char nextGreatestLetter(char[] letters, char target) {
+        for (int i = 0; i < letters.length; i++) {
+            int ascii=(int)target;
+            if (ascii<(int) letters[i]) return letters[i];
+        }
+        return letters[0];
+    }
+    public static int mySqrt(int x) {
+        int r=x;
+        while(r*r>x){
+            r=(r+(x/r))/2;
+        }
+        return r;
+    }
     public static void main(String[] args) {
-        System.out.println(generate(5));
-        System.out.println(getRow(5));
+        System.out.println(mySqrt(8));
     }
 }
    /* Symbol       Value
